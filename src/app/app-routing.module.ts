@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {PlayerListComponent} from './player/player-list/player-list.component';
-import {CreatePlayerComponent} from './player/create-player/create-player.component';
 import {PlayerEditComponent} from './player/player-edit/player-edit.component';
 import {PlayerDeleteComponent} from './player/player-delete/player-delete.component';
+import {PlayerCreateComponent} from './player/player-create/player-create.component';
 
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'create',
-    component: CreatePlayerComponent
+    component: PlayerCreateComponent
   },
   {
     path: 'edit/:id',

@@ -9,15 +9,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { CreatePlayerComponent } from './player/create-player/create-player.component';
 import { PlayerEditComponent } from './player/player-edit/player-edit.component';
 import { PlayerDeleteComponent } from './player/player-delete/player-delete.component';
+import { PlayerCreateComponent } from './player/player-create/player-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerListComponent,
-    CreatePlayerComponent,
     PlayerEditComponent,
     PlayerDeleteComponent,
-    PlayerDeleteComponent
+   PlayerCreateComponent
   ],
   imports: [
     BrowserModule,

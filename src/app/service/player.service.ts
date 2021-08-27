@@ -17,16 +17,16 @@ export class PlayerService {
     return this.http.get<Player[]>(this.API + '/players');
   }
 
-  savePlayer(player): Observable<Player> {
-    return this.http.post(this.API + '/players', player);
+  savePlayer(player: Player): Observable<Player> {
+    return this.http.post<Player>(this.API + '/players', player);
   }
 
   findById(id: number): Observable<Player> {
-    return this.http.get<Player>(`${this.API}/players/$(id)`);
+    return this.http.get<Player>(`${this.API}/players/${id}`);
   }
 
   updatePlayer(id: number, player: Player): Observable<Player> {
-    return this.http.put<Player>(`${this.API}/players/$(id`, player);
+    return this.http.put<Player>(`${this.API}/players/${id}`, player);
   }
 
   deletePlayer(id: number): Observable<Player> {
