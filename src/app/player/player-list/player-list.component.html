@@ -1,0 +1,18 @@
+<a routerLink="/create">create player</a>
+<table border="1px">
+  <tr>
+    <td>STT</td>
+    <td>Name</td>
+    <td>Champ</td>
+    <td colspan="2"></td>
+  </tr>
+  <tr *ngFor="let player of player; index as i">
+    <td>
+      {{i +1}}
+    </td>
+    <td>{{player.name}}</td>
+    <td>{{player.champ}}</td>
+    <td><a [routerLink]="['/edit/',player.id]">edit</a> </td>
+    <td><a [routerLink]="['/delete/',player.id]">delete</a> </td>
+  </tr>
+</table>

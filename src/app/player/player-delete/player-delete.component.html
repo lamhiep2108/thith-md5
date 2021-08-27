@@ -1,0 +1,32 @@
+<h1>delete</h1>
+<form [formGroup]="playerForm" (ngSubmit)="delete(id)">
+  <table>
+    <tr>
+      <td>name</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>champ</td>
+      <td><input type="text" formControlName="champ"></td>
+    </tr>
+    <tr>
+      <td>kda</td>
+      <td><input type="text" formControlName="kda"></td>
+    </tr>
+    <tr>
+      <td>des</td>
+     <td><input type="text" formControlName="des"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button >delete</button></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <a [routerLink]="['']">thoat</a>
+      </td>
+    </tr>
+  </table>
+
+</form>

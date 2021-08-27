@@ -1,0 +1,25 @@
+<h1>update</h1>
+<form [formGroup]="playerForm" (ngSubmit)="edit()">
+  <table>
+    <tr>
+      <td>name</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>champ</td>
+      <td><input type="text" formControlName="champ"></td>
+    </tr>
+    <tr>
+      <td>kda</td>
+      <td><input type="text" formControlName="kda"></td>
+    </tr>
+    <tr>
+      <td>des</td>
+      <td><textarea type="text" style="width: 200px;height: 100px" formControlName="des"></textarea></td>
+    </tr>
+        <tr>
+          <td></td>
+          <td><button >update</button></td>
+        </tr>
+  </table>
+</form>
